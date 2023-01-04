@@ -26,6 +26,7 @@ public class CocheCRUDImpl implements CocheCRUD{
         }
         return cochesFound.toString();
     }
+    @SuppressWarnings("SuspiciousListRemoveInLoop")
     @Override
     public void delete(CocheCRUDImpl coche) {
         for (int i = 0; i < coches.size(); i++) {
